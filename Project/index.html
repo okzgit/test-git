@@ -1,0 +1,89 @@
+<html>
+<head>
+    
+     <!-- DynaTable CSS -->
+     <link rel="stylesheet" media="all" href="DynaTable/css/jquery.dynatable.css" />
+     <link rel="stylesheet" media="all" href="DynaTable/css/tableDesign.css" />
+     <!-- Bootstrap css -->
+     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+     <!-- jQuery UI CSS -->
+     <link href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css" rel="stylesheet">
+     <!-- Bootstrap styling for Typeahead -->
+     <link href="Tokenfield/dist/css/tokenfield-typeahead.css" type="text/css" rel="stylesheet">
+     <!-- Tokenfield CSS -->
+     <link href="Tokenfield/dist/css/bootstrap-tokenfield.css" type="text/css" rel="stylesheet">
+     <!-- Docs CSS -->
+     <link href="Tokenfield/docs-assets/css/pygments-manni.css" type="text/css" rel="stylesheet">
+     <link href="Tokenfield/docs-assets/css/docs.css" type="text/css" rel="stylesheet">
+     <!-- Right Tab Style -->
+     <link href="rightTab/css/rightTab.css" type="text/css" rel="stylesheet">
+</head>
+
+
+<body>
+     <!-- load jQuery 1.7.2.min -->
+    <script type="text/javascript" src="DynaTable/vendor/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="DynaTable/js/jquery.dynatable.js"></script>
+    <!-- DynaTable result control -->
+    <script type="text/javascript" src="DynaTable/js/tableResult.js"></script>
+    <script type="text/javascript" src="DynaTable/js/tableControl.js"></script>
+ 
+    <!-- load bootstrap-tokenfield -->
+    <script type="text/javascript" src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script type="text/javascript" src="Tokenfield/dist/bootstrap-tokenfield.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="Tokenfield/docs-assets/js/scrollspy.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="Tokenfield/docs-assets/js/affix.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="Tokenfield/docs-assets/js/typeahead.bundle.min.js" charset="UTF-8"></script>
+    <!-- load bootstrap-tokenfield Control -->
+    <script type="text/javascript" src="Tokenfield/docs-assets/js/docs.min.js" charset="UTF-8"></script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDtECUu7LRx_XsxKjpWRgomqv3Z9S6BaI&callback=initMap">
+    </script>
+
+<script type="text/javascript" src="DynaTable/js/userLocation.js" charset="UTF-8"></script>
+
+
+<div id="rightTab"></div>
+<div id="map"></div>
+ 	<h3>Input for Keyword(s)/ Tag(s)</h3>
+				<!--Handled by docs/min.js, see script types (last).-->
+ <input type="text" class="form-control" id="tokenfield-1" value="" placeholder="Type something and hit enter" />
+	
+    <table id="resultTable">
+  <thead>
+    <tr>     
+    <th>name</th>
+
+    <th>addr</th>
+      <th>web</th>
+      <th>lat</th>
+      <th>lon</th>
+    </tr>
+  </thead>
+  <tbody id ="rowData">
+  <tr id="name">  <td>name</td></tr>
+    <tr id="addr"> <td>addr</td></tr>
+   <tr id="web"> <td>web</td></tr>
+    <tr id="lat">  <td>lat</td></tr>
+  <tr id="lon">  <td>lon</td></tr>
+   
+  </tbody>
+</table>
+    
+    
+
+
+
+
+
+
+  </body>
+
+
+
+
+
+
+
+</html>
